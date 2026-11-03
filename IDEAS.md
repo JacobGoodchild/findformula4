@@ -43,3 +43,4 @@ Numerically (n=6..12, random + trees) K/kf is minimised by the star, value (2n-3
 
 ## Independent recomputation (fresh agent, own code, 18:02)
 All three numerical claims PASS: (1) Cayley-Menger det = (-1)^n 2^(n-1)/tau exactly on 994 graphs (grounded-Laplacian method); (2) circumsphere centre lambda_i = 1 - p_i/2 exact, rho^2 bounds with equality iff tree / K_n on 994 graphs, independent coordinates; (3) first-moment random target constant, second-moment NOT constant (P5: 90.5, 100.5, 106.5, 100.5, 90.5; confirmed by simulation to <1%).
+- Probe 11 (18:03): family mu({j,k}) = (pi_j pi_k)^a (pi_j+pi_k)^b of random-pair target weights, optimised over (a,b) on 4 random 7-state reversible chains (results/random_target/famsearch.py): best relative spread 0.045 summed (~1% per chain), not zero, no member of the family gives start-independence. Dead.
