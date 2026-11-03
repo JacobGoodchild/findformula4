@@ -135,3 +135,4 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 - 17:29 UTC: PLAN/IDEAS/NOVELTY/NOTES created; graph scan (results/graphs_explore) found nothing new. Next: a structured generalisation search (approach B).
 - 17:29 UTC: UST probe (I3) dead; results.md/README/verify_all stubs written.
 - 17:30 UTC: interim stop. Wake-up trig_01Gp3VLD71dJXms2az36cHVd to be deleted. Waiting for Jacob's all-clear.
+- 17:39 UTC: deep dive 1 (random target lemma, higher moments) dead; logged. Continuing with next single theorem.

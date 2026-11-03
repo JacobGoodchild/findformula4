@@ -3,3 +3,11 @@
 - I2 (graphs, universal sharp ratios): extremal ratios Kirchhoff/Kemeny equal n/(n-1), attained by K_n. Status: known-type (Kemeny-Kirchhoff bounds literature); not pursued. Also checked K = (1/4m) sum d_i d_j R_ij on a star (known identity, degree-Kirchhoff index).
 - I3 (uniform spanning tree, approach A/B): looked for exact relation between E[Wiener index of random spanning tree] and Kirchhoff/Wiener/degree-weighted invariants for all connected graphs on 4..6 vertices (141 graphs, tree enumeration). RESULT: no exact linear relation (smallest singular value clearly nonzero). Status: dead.
 - I4 (transfer-current projector): sum_{e,f,g} T_ef T_fg T_ge = n-1 and sum_{f!=e} T_ef^2 = R_e(1-R_e) follow trivially because the transfer-current matrix is a projection. Status: known/trivial.
+
+## Deep dive 1 (17:37 UTC onward): Random target lemma (Aldous-Fill Cor 2.14; Kemeny's constant)
+Theorem: sum_j pi_j E_i[T_j] is independent of start i. Chosen because it is central, taught, and a famous "surprising constant".
+Generalisations tested (results/random_target/):
+- **Second moment**: sum_j pi_j E_i[T_j^2] DOES depend on i (path P6: 216.5, 232.5, 248.5; lollipop, random graphs likewise). Derived why: with H2 the matrix of second moments, (I-P)H2 pi = (2K+1)*1 - (pi_j s_j)_j, where s_j = E_j[(return time)^2]; so it solves a Poisson equation with a non-constant right-hand side. Hence no start-independence. Variance version also depends on i.
+- **Random target set** (pairs {j,k}, natural weights pi_j pi_k, pi_j+pi_k, uniform): all depend on start. Weights that do give start-independence exist (nullspace of dimension C(n,2)-(n-1)) but none is natural.
+- Regression of pi'M2 pi on Kemeny-type spectral sums sum(1-lambda)^-p failed on non-reversible chains (needs return-time second moments), consistent with the derivation.
+Literature (searches: random target lemma + higher moments; variance generalisation; Hunter variances paper; Levene-Loizou; Fitzsimmons proof): the first-moment lemma is classical; higher-moment formulas come from powers of the fundamental matrix Z (Hunter 2006 and Levene-Loizou), not from a start-independent identity. Active recent work: Kemeny constant for second-order walks (Fasino). Status: **dead / known territory**. Not logged as a result.
