@@ -40,3 +40,6 @@ Numerically (n=6..12, random + trees) K/kf is minimised by the star, value (2n-3
 - Random target with i.i.d. stationary PAIR (with replacement) still depends on start. Dead.
 - Approach D: total Wiener index over all labelled trees on n=2..8 vertices = 1, 12, 156, 2360, 41400, 831012, 18832576 -> OEIS A036276 ("a(n) = A001864(n+1)/2", found via oeis.org search, opened as search result). Known (Moon-type classical count). Dead.
 - Probe 10 (18:00): linear-relation search for total UST degree variance vs (n, m, sum q^2): only the trivial Foster dependency (sum q(1-q) = n-1 - sum q^2) appears. Dead.
+
+## Independent recomputation (fresh agent, own code, 18:02)
+All three numerical claims PASS: (1) Cayley-Menger det = (-1)^n 2^(n-1)/tau exactly on 994 graphs (grounded-Laplacian method); (2) circumsphere centre lambda_i = 1 - p_i/2 exact, rho^2 bounds with equality iff tree / K_n on 994 graphs, independent coordinates; (3) first-moment random target constant, second-moment NOT constant (P5: 90.5, 100.5, 106.5, 100.5, 90.5; confirmed by simulation to <1%).
