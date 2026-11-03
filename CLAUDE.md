@@ -137,3 +137,4 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 - 17:30 UTC: interim stop. Wake-up trig_01Gp3VLD71dJXms2az36cHVd to be deleted. Waiting for Jacob's all-clear.
 - 17:39 UTC: deep dive 1 (random target lemma, higher moments) dead; logged. Continuing with next single theorem.
 - 17:41 UTC: deep dive 2 (CM det of resistance matrix) verified on 994 graphs but KNOWN (Devriendt-Van Mieghem 2018 eq 28). Next: pick another.
+- 17:45 UTC: deep dive 3 (resistance-simplex circumsphere): Thm A known (Devriendt-Lambiotte resistance curvature); B formula proved, minor. Referee agent launched. Trying to prove rho^2 <= (n-1)/4.
