@@ -36,3 +36,9 @@ Proof: column i of R is R e_i; by (*) L R e_i = w - 2 e_i, so (R e_i)^T L (R e_i
 Proof: resistance distance is a metric (triangle inequality), so |R_ia - R_ib| <= R_ab; insert in (C).
 Lower bound: rho^2 >= kf/n^2 (from B), and kf >= n-1 for unit weights (K_n minimal), so rho^2 >= (n-1)/n^2, equality iff K_n.
 Exact rational checks: results/resistance_simplex/exact_C.py (1080 graphs incl. weighted), numeric scan up to n=25 weighted (results/circumsphere/ub.py).
+
+## Referee round 2 additions (fresh agent; verdict: C, D, lower bound correct; gaps filled below)
+- Triangle inequality for R (Klein-Randic 1993; short proof): for k, let v = Lp(e_i - e_k), harmonic off {i,k}, so v_k <= v_j <= v_i (maximum principle). R_ij = (e_i-e_j)^T Lp (e_i-e_k) + (e_i-e_j)^T Lp (e_k-e_j) = (v_i - v_j) + (u_j - u_i) with u = Lp(e_j - e_k), u_k <= u_i; so R_ij <= (v_i - v_k) + (u_j - u_k) = R_ik + R_jk. Valid for positive weights.
+- q_e = c_e R_e = P(e in T) <= 1 (Kirchhoff / leverage score of a projection). Equality q_e = 1 for all e iff all edges are bridges iff G is a tree.
+- Foster sum_E R_e = n-1 is the UNIT-WEIGHT case only; for weighted graphs the bound is rho^2 <= (1/4) sum_E q_e R_e <= (1/4) sum_E R_e.
+- Lower bound (unit weights, simple graph): kf = n * sum_{i>=2} 1/mu_i, and mu_i <= n, so kf >= n-1, equality iff all nonzero mu_i = n iff G = K_n. False for weighted graphs.

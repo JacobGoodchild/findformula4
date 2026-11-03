@@ -139,3 +139,4 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 - 17:41 UTC: deep dive 2 (CM det of resistance matrix) verified on 994 graphs but KNOWN (Devriendt-Van Mieghem 2018 eq 28). Next: pick another.
 - 17:45 UTC: deep dive 3 (resistance-simplex circumsphere): Thm A known (Devriendt-Lambiotte resistance curvature); B formula proved, minor. Referee agent launched. Trying to prove rho^2 <= (n-1)/4.
 - 17:47 UTC: referee round 1 passed on A/B; added C and upper bound D (proved, exact-checked). Niche, not citeable by outsiders. Need referee round 2 on C/D.
+- 17:51 UTC: referee round 2 passed (C, D, lower bound); gaps filled.
