@@ -149,3 +149,4 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 - 18:30 UTC: SESSION 1 STOP. All work committed. Wake-ups cancelled. Waiting for Jacob's all-clear; on resume re-read this file, MORNING_SUMMARY.md, IDEAS.md, NOTES.md (leads).
 - 19:07 UTC: Jacob gave the go-ahead: work until 19:40 UTC (higher dimensions / formulas / anything interesting).
 - 19:10 UTC: higher-dim face-degree law proved but KNOWN (Vander Werf 2022 Thm 2 corollary).
+- 19:18 UTC: hypertree counts 1,4,125,46620 (data point); ridge-weighted counts consistency; no new theorem.
