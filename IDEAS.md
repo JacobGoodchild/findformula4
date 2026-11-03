@@ -1,3 +1,5 @@
 # IDEAS (status: dead / known / promising / proved)
 - I1 (graphs, bridge scan): compute 15 invariants (Kirchhoff index, Kemeny constant, Wiener, spanning trees, Hosoya, Merrifield-Simmons, ...) over all 994 connected graphs on 3..7 vertices; look for exact cross-area linear relations. RESULT: none beyond trivial (cyc = m-n+1). Status: dead.
 - I2 (graphs, universal sharp ratios): extremal ratios Kirchhoff/Kemeny equal n/(n-1), attained by K_n. Status: known-type (Kemeny-Kirchhoff bounds literature); not pursued. Also checked K = (1/4m) sum d_i d_j R_ij on a star (known identity, degree-Kirchhoff index).
+- I3 (uniform spanning tree, approach A/B): looked for exact relation between E[Wiener index of random spanning tree] and Kirchhoff/Wiener/degree-weighted invariants for all connected graphs on 4..6 vertices (141 graphs, tree enumeration). RESULT: no exact linear relation (smallest singular value clearly nonzero). Status: dead.
+- I4 (transfer-current projector): sum_{e,f,g} T_ef T_fg T_ge = n-1 and sum_{f!=e} T_ef^2 = R_e(1-R_e) follow trivially because the transfer-current matrix is a projection. Status: known/trivial.
