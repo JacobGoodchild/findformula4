@@ -1,4 +1,8 @@
-# Re-runs the scans that back statements in IDEAS.md (no theorem claims yet).
-import subprocess, sys
-for p in ["results/graphs_explore/scan.py","results/graphs_explore/rel.py"]:
-    print("running",p); subprocess.run([sys.executable,p],check=True,cwd=__file__.rsplit("/",1)[0] or ".")
+# Re-runs the exact/numeric checks behind the claims in results.md and IDEAS.md.
+import subprocess, sys, os
+here=os.path.dirname(os.path.abspath(__file__))
+for p in ["results/resistance_simplex/cm.py","results/resistance_simplex/exact_circ.py",
+          "results/resistance_simplex/exact_C.py","results/circumsphere/ub.py","results/random_target/mom.py"]:
+    print("== running",p,flush=True)
+    subprocess.run([sys.executable,os.path.join(here,p)],check=True,cwd=os.path.dirname(os.path.join(here,p)))
+print("all checks completed")
