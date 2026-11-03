@@ -1,0 +1,3 @@
+# IDEAS (status: dead / known / promising / proved)
+- I1 (graphs, bridge scan): compute 15 invariants (Kirchhoff index, Kemeny constant, Wiener, spanning trees, Hosoya, Merrifield-Simmons, ...) over all 994 connected graphs on 3..7 vertices; look for exact cross-area linear relations. RESULT: none beyond trivial (cyc = m-n+1). Status: dead.
+- I2 (graphs, universal sharp ratios): extremal ratios Kirchhoff/Kemeny equal n/(n-1), attained by K_n. Status: known-type (Kemeny-Kirchhoff bounds literature); not pursued. Also checked K = (1/4m) sum d_i d_j R_ij on a star (known identity, degree-Kirchhoff index).

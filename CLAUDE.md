@@ -132,3 +132,4 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 ## Progress log
 
 - 17:26 UTC: started; sympy/numpy/scipy/networkx installed; wake-up set.
+- 17:29 UTC: PLAN/IDEAS/NOVELTY/NOTES created; graph scan (results/graphs_explore) found nothing new. Next: a structured generalisation search (approach B).
