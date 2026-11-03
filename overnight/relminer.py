@@ -60,7 +60,9 @@ if extra:
         keys.append(f'{keys[a]}*{keys[b]}'); X=np.c_[X,np.array([x[a]*x[b] for x in X],dtype=object)]
 X=np.c_[np.array([1]*len(X),dtype=object),X]; keys=['1']+keys
 rng=np.random.default_rng(0); samp=rng.choice(len(X),min(len(X),3*len(keys)),replace=False)
-M=sp.Matrix(X[samp].tolist()); ns=M.nullspace(); print('invariants',len(keys),'rank',M.rank(),'relations',len(ns),flush=True)
+from sympy.polys.matrices import DomainMatrix
+from sympy import QQ
+M=sp.Matrix(X[samp].tolist()); DM=DomainMatrix.from_Matrix(M).convert_to(QQ); NS=DM.nullspace().to_Matrix(); ns=[NS[i,:].T for i in range(NS.shape[0])]; print('invariants',len(keys),'relations',len(ns),flush=True)
 good=[]
 for v in ns:
     den=sp.ilcm(*[sp.fraction(x)[1] for x in v]); w=[int(x*den) for x in v]
