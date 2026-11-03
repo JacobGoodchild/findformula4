@@ -153,3 +153,4 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 - 19:34 UTC: SESSION 2 STOP (Jacob's 19:40 deadline). Work committed. Wake-ups cancelled/fired. Waiting for Jacob.
 - 19:48 UTC: OVERNIGHT low-usage mode started: scripts in overnight/, wake-ups every ~75 min (21:00,22:15,23:30,00:45,02:00,03:15,04:30,05:45,06:45 UTC), each wake-up only runs overnight/status.sh. No agents.
 - 21:01 UTC: check 21:00: machine had restarted; relaunched hypertree7 (118/128ish prefixes, 259.7M bases so far), relminer 7x and 8 (n=8 graph count 11117 ok).
+- 22:16 UTC: check 22:15: hypertree7 DONE: n=7 -> 281314537 hypertrees (torsion Z/2: 386904; sum|H|^2 = 7^10 verified). relminer 7x/8 relaunched (restart-killed).
