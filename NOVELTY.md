@@ -1,2 +1,3 @@
 # NOVELTY
 - Random-target lemma, higher-moment/variance version: searched 4 ways (see IDEAS.md); no start-independent second-moment law found, and the structure (Poisson eq. with return-time second moments; Z^k formulas) is known (Hunter 2006, Levene-Loizou). Verdict: known / not a theorem.
+- CM determinant of resistance matrix = (-1)^n 2^(n-1)/tau (resistance-simplex volume ~ 1/sqrt(tau)): **known** - Devriendt & Van Mieghem arXiv:1807.06475 Sec 4.5 eq (28) (opened), building on Fiedler. Search queries: CM det + effective resistance; Bapat resistance determinant; Fiedler non-obtuse simplex M-matrix; resistance Euclidean embedding simplex volume.
