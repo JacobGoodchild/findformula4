@@ -39,3 +39,4 @@ Numerically (n=6..12, random + trees) K/kf is minimised by the star, value (2n-3
 ## Probes 8-9 (18:00): dead / known
 - Random target with i.i.d. stationary PAIR (with replacement) still depends on start. Dead.
 - Approach D: total Wiener index over all labelled trees on n=2..8 vertices = 1, 12, 156, 2360, 41400, 831012, 18832576 -> OEIS A036276 ("a(n) = A001864(n+1)/2", found via oeis.org search, opened as search result). Known (Moon-type classical count). Dead.
+- Probe 10 (18:00): linear-relation search for total UST degree variance vs (n, m, sum q^2): only the trivial Foster dependency (sum q(1-q) = n-1 - sum q^2) appears. Dead.
