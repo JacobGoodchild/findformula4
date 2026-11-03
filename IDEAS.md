@@ -35,3 +35,7 @@ Numerically (n=6..12, random + trees) K/kf is minimised by the star, value (2n-3
 ## Probes 6-7 (17:59-18:00): dead
 - E_T[Wiener index of random spanning tree] / Kirchhoff index: 1 on trees, but grows with n for K_n (3.25, 4.72, 6.39 for n=4,5,6): no universal bound (cycle ratio 2 is a local coincidence). Dead.
 - Random-target property for two-walker MEETING time (lazy walks, product chain): sum_j pi_j M(i,j) depends on i (path6: 10.16, 8.85, 7.69, ...). Dead.
+
+## Probes 8-9 (18:00): dead / known
+- Random target with i.i.d. stationary PAIR (with replacement) still depends on start. Dead.
+- Approach D: total Wiener index over all labelled trees on n=2..8 vertices = 1, 12, 156, 2360, 41400, 831012, 18832576 -> OEIS A036276 ("a(n) = A001864(n+1)/2", found via oeis.org search, opened as search result). Known (Moon-type classical count). Dead.

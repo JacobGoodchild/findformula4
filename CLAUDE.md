@@ -143,3 +143,4 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 - 17:53 UTC: Van Mieghem preprint shows Thm C already known. Deep dive 3 = known territory. Next: pick deep dive 4.
 - 17:54 UTC: probes 4,5 (root gaps; Kemeny vs Kirchhoff) known. No headline result so far.
 - 17:57 UTC: probes 6,7 dead; next-session leads in NOTES.md.
+- 17:58 UTC: probes 8,9 dead/known.

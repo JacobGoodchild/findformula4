@@ -20,3 +20,13 @@ rng=np.random.default_rng(2)
 n=6
 A=(rng.random((n,n))<.6).astype(float); np.fill_diagonal(A,0); A=np.maximum(A,A.T)
 run(A/A.sum(1)[:,None],'undirected')
+
+# with-replacement i.i.d. stationary pair (includes singletons when j=k)
+def with_repl(P,name):
+    n=len(P); w,v=np.linalg.eig(P.T); pi=np.real(v[:,np.argmin(abs(w-1))]); pi/=pi.sum()
+    tot=np.zeros(n)
+    for j in range(n):
+        for k in range(n):
+            tot+=pi[j]*pi[k]*hit_set(P,{j,k})
+    print(name,'iid-pair target, spread over start:',round(np.ptp(tot),4),'values',np.round(tot,3)[:4])
+with_repl(A/A.sum(1)[:,None],'undirected')
