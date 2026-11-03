@@ -147,3 +147,5 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 - 18:00 UTC: independent recomputation of numerical claims PASSED.
 - 18:13 UTC: probes 11,12 dead; large-n check of circumsphere theorems passed. Final wrap wake-up set 18:31 UTC.
 - 18:30 UTC: SESSION 1 STOP. All work committed. Wake-ups cancelled. Waiting for Jacob's all-clear; on resume re-read this file, MORNING_SUMMARY.md, IDEAS.md, NOTES.md (leads).
+- 19:07 UTC: Jacob gave the go-ahead: work until 19:40 UTC (higher dimensions / formulas / anything interesting).
+- 19:10 UTC: higher-dim face-degree law proved but KNOWN (Vander Werf 2022 Thm 2 corollary).
