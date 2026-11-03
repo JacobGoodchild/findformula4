@@ -17,15 +17,16 @@ def run(Wm):
     tree=len(E)==n-1
     assert (rho2==ub2)==tree, "equality case"
     return 1
-cnt=0
-for G in graph_atlas_g():
-    if G.number_of_nodes()<2 or not nx.is_connected(G): continue
-    run(sp.Matrix(nx.to_numpy_array(G).astype(int).tolist())); cnt+=1
-random.seed(11)
-for t in range(120):
-    n=random.randint(3,8); G=nx.gnp_random_graph(n,.5,seed=random.randint(0,10**6))
-    if not nx.is_connected(G): continue
-    Wm=sp.zeros(n,n)
-    for u,v in G.edges(): Wm[u,v]=Wm[v,u]=random.randint(1,9)
-    run(Wm); cnt+=1
-print('Theorem C + bound chain + equality-iff-tree OK on',cnt,'graphs')
+if __name__=="__main__":
+    cnt=0
+    for G in graph_atlas_g():
+        if G.number_of_nodes()<2 or not nx.is_connected(G): continue
+        run(sp.Matrix(nx.to_numpy_array(G).astype(int).tolist())); cnt+=1
+    random.seed(11)
+    for t in range(120):
+        n=random.randint(3,8); G=nx.gnp_random_graph(n,.5,seed=random.randint(0,10**6))
+        if not nx.is_connected(G): continue
+        Wm=sp.zeros(n,n)
+        for u,v in G.edges(): Wm[u,v]=Wm[v,u]=random.randint(1,9)
+        run(Wm); cnt+=1
+    print('Theorem C + bound chain + equality-iff-tree OK on',cnt,'graphs')

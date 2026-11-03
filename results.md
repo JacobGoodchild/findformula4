@@ -9,4 +9,4 @@ In short, for a connected weighted graph, the points whose squared distances are
 - 4 rho^2 = sum_edges c_ab (R_ia - R_ib)^2 for EVERY vertex i;
 - rho^2 <= (1/4) sum_edges R_e, equality iff the graph is a tree (unit weights: (n-1)/n^2 <= rho^2 <= (n-1)/4).
 Verification: two fresh referee agents (no errors; small gaps fixed); exact rational checks on 1080 graphs (verify_all.py); numeric checks to n=40.
-Novelty: first item known; the formula for rho^2, the Dirichlet-energy identity and the upper bound not found in the papers opened (see NOVELTY.md), but closely related to Fiedler / Devriendt / Van Mieghem work -> probably known or minor.
+Novelty: A and C are KNOWN (Devriendt-Lambiotte; Van Mieghem preprint, opened). Only B (farness formula) and D (rho^2 <= 1/4 sum_E R_e, equality iff tree) were not found; they are minor corollaries. Do NOT present as a new theorem.

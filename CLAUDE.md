@@ -140,3 +140,4 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 - 17:45 UTC: deep dive 3 (resistance-simplex circumsphere): Thm A known (Devriendt-Lambiotte resistance curvature); B formula proved, minor. Referee agent launched. Trying to prove rho^2 <= (n-1)/4.
 - 17:47 UTC: referee round 1 passed on A/B; added C and upper bound D (proved, exact-checked). Niche, not citeable by outsiders. Need referee round 2 on C/D.
 - 17:51 UTC: referee round 2 passed (C, D, lower bound); gaps filled.
+- 17:53 UTC: Van Mieghem preprint shows Thm C already known. Deep dive 3 = known territory. Next: pick deep dive 4.
