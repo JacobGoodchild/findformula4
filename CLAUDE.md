@@ -151,3 +151,4 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 - 19:10 UTC: higher-dim face-degree law proved but KNOWN (Vander Werf 2022 Thm 2 corollary).
 - 19:18 UTC: hypertree counts 1,4,125,46620 (data point); ridge-weighted counts consistency; no new theorem.
 - 19:34 UTC: SESSION 2 STOP (Jacob's 19:40 deadline). Work committed. Wake-ups cancelled/fired. Waiting for Jacob.
+- 19:48 UTC: OVERNIGHT low-usage mode started: scripts in overnight/, wake-ups every ~75 min (21:00,22:15,23:30,00:45,02:00,03:15,04:30,05:45,06:45 UTC), each wake-up only runs overnight/status.sh. No agents.
