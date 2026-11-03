@@ -26,5 +26,13 @@ Proof.
    Therefore Rw = (d^T w + 2 sum d / n) 1, c = d^T w + 2 (sum d)/n, and d^T w = d^T L d + (2/n) sum d. So c = d^T L d + 4 (sum d)/n.
    Using sum d = tr Lp = kf/n and d^T L d = sum_{i<j} c_ij (d_i - d_j)^2 gives rho^2 = c/4 = kf/n^2 + (1/4) sum c_ij (d_i-d_j)^2.
    Since F_i = sum_k (d_i + d_k - 2 Lp_ik) = n d_i + sum d, d_i - d_j = (F_i - F_j)/n.
-6. Centroid of the x_i is sum_i x_i / n; with the origin there, sum_i |x_i|^2 = sum_i d_i... (|x_i|^2 = Lp_ii when x_i are the columns of Lp^{1/2}), and sum_i |x_i - p|^2 = sum |x_i|^2 + n|p|^2 gives n rho^2 = sum d + n |p|^2 = kf/n + n|p|^2, so |p|^2 = rho^2 - kf/n^2 = the second term in (B).
-Consequences follow: (i) lambda_i = 1/n iff w_i = 2/n; the edge sum vanishes iff F is constant on each edge iff constant (G connected); (ii) lambda_i >= 0 iff E deg_T(i) <= 2; (iii) for a tree R_ij = distance and c_ij R_ij = 1, so w_i = 2 - deg(i); rho^2 = c/4 with c = (Rw)_1 computed at a leaf... (verified numerically/exactly; formal proof via the formula in (B) not needed).
+6. Choose x_i = columns of Lp^{1/2} (so sum x_i = 0, centroid at the origin, |x_i|^2 = d_i). Then sum_i |x_i - p|^2 = sum |x_i|^2 + n|p|^2 gives n rho^2 = sum d + n |p|^2 = kf/n + n|p|^2, so |p|^2 = rho^2 - kf/n^2 = the second term in (B).
+Consequences. (i) w_i = 2/n for all i iff Ld = 0 iff d constant iff F constant (G connected). (ii) lambda_i >= 0 iff E deg_T(i) <= 2. (iii) Tree, unit weights: R_ij = dist, c_ij R_ij = 1, w_j = 2 - deg(j). Fix any vertex i, D_j = dist(i,j), S = sum D_j. c = (Rw)_i = 2S - sum_j D_j deg(j); deg(j) = 1 + children(j) for j != i, and sum_j D_j children(j) = sum_{k != i}(D_k - 1) = S - (n-1), so sum D_j deg(j) = 2S - (n-1) and c = n-1, rho^2 = (n-1)/4. (Referee-supplied proof.)
+
+## Theorem C (added after referee round 1) and the upper bound
+(C) For EVERY vertex i:  4 rho^2 = c = sum_{ab in E} c_ab (R_ia - R_ib)^2   (Dirichlet energy of the function a -> R(i,a)).
+Proof: column i of R is R e_i; by (*) L R e_i = w - 2 e_i, so (R e_i)^T L (R e_i) = (R e_i)^T (w - 2e_i) = (Rw)_i - 2 R_ii = c.
+(D) rho^2 <= (1/4) sum_E c_ab R_ab^2 = (1/4) sum_E q_e R_e <= (1/4) sum_E R_e, where q_e = c_e R_e = P(e in T) <= 1; equality in the last step iff every q_e = 1 iff G is a tree (in which case the first is equality too). For unit weights: rho^2 <= (n-1)/4 (Foster: sum_E R_e = n-1), equality iff G is a tree.
+Proof: resistance distance is a metric (triangle inequality), so |R_ia - R_ib| <= R_ab; insert in (C).
+Lower bound: rho^2 >= kf/n^2 (from B), and kf >= n-1 for unit weights (K_n minimal), so rho^2 >= (n-1)/n^2, equality iff K_n.
+Exact rational checks: results/resistance_simplex/exact_C.py (1080 graphs incl. weighted), numeric scan up to n=25 weighted (results/circumsphere/ub.py).
