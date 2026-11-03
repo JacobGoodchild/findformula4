@@ -141,3 +141,4 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 - 17:47 UTC: referee round 1 passed on A/B; added C and upper bound D (proved, exact-checked). Niche, not citeable by outsiders. Need referee round 2 on C/D.
 - 17:51 UTC: referee round 2 passed (C, D, lower bound); gaps filled.
 - 17:53 UTC: Van Mieghem preprint shows Thm C already known. Deep dive 3 = known territory. Next: pick deep dive 4.
+- 17:54 UTC: probes 4,5 (root gaps; Kemeny vs Kirchhoff) known. No headline result so far.
