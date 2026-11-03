@@ -31,3 +31,7 @@ Deep dive 3 conclusion: elementary, correct, referee-checked, but niche; outside
 min gap of p' >= min gap of p for real-rooted p is Riesz's theorem (1920s; simple proof Farmer-Rhoades), per search results (not opened); equispaced test gives ratio >1 decreasing to 1 (results/critical_gaps/gaps.py; the "0.0" minimum in the random scan is floating-point noise from near-double roots). Status: known/dead.
 ## Probe 5 (17:59): Kemeny constant vs Kirchhoff index -- KNOWN territory
 Numerically (n=6..12, random + trees) K/kf is minimised by the star, value (2n-3)/(2(n-1)^2) (results/graphs_explore/kk.py); K = (1/2*sum d) sum_{i<j} d_i d_j R_ij. Relations between K and effective graph resistance are in Wang-Dubbeldam-Van Mieghem (LAA 2017, search hit, not opened) and Kim et al arXiv:2309.05171. Not pursued. Status: known/dead.
+
+## Probes 6-7 (17:59-18:00): dead
+- E_T[Wiener index of random spanning tree] / Kirchhoff index: 1 on trees, but grows with n for K_n (3.25, 4.72, 6.39 for n=4,5,6): no universal bound (cycle ratio 2 is a local coincidence). Dead.
+- Random-target property for two-walker MEETING time (lazy walks, product chain): sum_j pi_j M(i,j) depends on i (path6: 10.16, 8.85, 7.69, ...). Dead.
