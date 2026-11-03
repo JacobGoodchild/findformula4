@@ -145,3 +145,4 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 - 17:57 UTC: probes 6,7 dead; next-session leads in NOTES.md.
 - 17:58 UTC: probes 8,9 dead/known.
 - 18:00 UTC: independent recomputation of numerical claims PASSED.
+- 18:13 UTC: probes 11,12 dead; large-n check of circumsphere theorems passed. Final wrap wake-up set 18:31 UTC.
