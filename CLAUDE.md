@@ -155,3 +155,4 @@ Go. Set up the wake-ups, write CLAUDE.md, then start.
 - 21:01 UTC: check 21:00: machine had restarted; relaunched hypertree7 (118/128ish prefixes, 259.7M bases so far), relminer 7x and 8 (n=8 graph count 11117 ok).
 - 22:16 UTC: check 22:15: hypertree7 DONE: n=7 -> 281314537 hypertrees (torsion Z/2: 386904; sum|H|^2 = 7^10 verified). relminer 7x/8 relaunched (restart-killed).
 - 23:36 UTC: check 23:30: relminer fixed and finished for n=7,8 (+quadratic): only trivial identities. All overnight jobs now done. Remaining wake-ups just confirm and finish.
+- 06:47 UTC: FINAL overnight wake-up: summary addendum written, all jobs done, wake-ups cancelled. STOP until Jacob says go.
